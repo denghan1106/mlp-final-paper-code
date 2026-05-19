@@ -24,6 +24,10 @@ This folder is reorganized by function. It contains only the final code and resu
   - `cross_day_ensemble/`: cross-day ensemble training, averaging, calibration, plotting, and summarizing scripts.
   - `baseline_comparison/`: baseline comparison and final table assembly scripts.
 
+- `05_162_test_prediction_figures/`
+  - three 162-point same-split test prediction figures used by the final validation references.
+  - files are named by validation split: `validation_inner6`, `validation_split1`, and `validation_split7`.
+
 ## Excluded
 
 Intermediate experiments, raw data folders, `__pycache__`, `.DS_Store`, Matplotlib cache folders, trained `model.joblib` files, and large `window_features.csv` feature-cache files are excluded from this final package.
