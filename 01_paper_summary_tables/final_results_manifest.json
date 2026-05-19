@@ -1,0 +1,45 @@
+{
+  "scope": [
+    "Single-sensor vs dual-sensor improved MLP on the same three 20260430_true_inputs 162-point validation splits.",
+    "Dual-sensor improved/plain MLP/GRNN/ExtraTrees on the same validation splits.",
+    "Dual-sensor improved/plain MLP/GRNN/ExtraTrees for 20260430_true_inputs -> 20260429 only, with 29 calibration records and 34 evaluated records."
+  ],
+  "same_split_references": {
+    "validation_inner6": "../03_detailed_baseline_results/02_same_split_dual_sensor_model_comparison/validation_inner6/improved_mlp",
+    "validation_split1": "../03_detailed_baseline_results/02_same_split_dual_sensor_model_comparison/validation_split1/improved_mlp",
+    "validation_split7": "../03_detailed_baseline_results/02_same_split_dual_sensor_model_comparison/validation_split7/improved_mlp"
+  },
+  "cross_reference": "../02_final_cross_day_mlp_result/calibrated_10_seed_ensemble",
+  "calibration_record_ids_20260429": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    18,
+    19,
+    27,
+    28,
+    32,
+    36,
+    37,
+    45,
+    46,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+  ],
+  "summary_rows": 22
+}

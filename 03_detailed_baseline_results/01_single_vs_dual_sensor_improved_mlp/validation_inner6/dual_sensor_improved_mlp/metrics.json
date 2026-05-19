@@ -1,0 +1,215 @@
+{
+  "config": {
+    "data_dirs": [
+      "/Users/tony/Downloads/whisker/mlp/20260430_true_inputs"
+    ],
+    "rows": 18,
+    "cols": 9,
+    "grid_step": 1.0,
+    "scan_order": "horizontal_up",
+    "left_sensor_xy": [
+      3.0,
+      -2.0
+    ],
+    "right_sensor_xy": [
+      5.0,
+      -2.0
+    ],
+    "reference_xy": [
+      4.0,
+      -2.0
+    ],
+    "target_mode": "center_relative",
+    "channels": [
+      "left_input27",
+      "left_input28",
+      "left_input29",
+      "left_theory30",
+      "right_input23",
+      "right_input24",
+      "right_input25",
+      "right_input26"
+    ],
+    "dataset_channel_rules": {
+      "20260428": "replace polluted measured 29 with theoretical 29; synthesize 30",
+      "20260429": "use measured 29; synthesize 30"
+    },
+    "row_offsets": {},
+    "split_mode": "constrained_random",
+    "split_unit": "dataset_record",
+    "test_size": 0.14,
+    "max_edge_test_fraction": 0.05,
+    "split_random_state": 3205562088,
+    "randomize_split": true,
+    "constrained_max_edge_test_fraction": 0.25,
+    "constrained_rule_no_three_in_line": "horizontal_vertical_diagonal",
+    "exclude_corner_test": true,
+    "excluded_corner_test_keys": [
+      "20260430_true_inputs:1",
+      "20260430_true_inputs:154",
+      "20260430_true_inputs:162",
+      "20260430_true_inputs:9"
+    ],
+    "test_keys": [
+      "20260430_true_inputs:103",
+      "20260430_true_inputs:105",
+      "20260430_true_inputs:106",
+      "20260430_true_inputs:13",
+      "20260430_true_inputs:131",
+      "20260430_true_inputs:141",
+      "20260430_true_inputs:143",
+      "20260430_true_inputs:17",
+      "20260430_true_inputs:19",
+      "20260430_true_inputs:25",
+      "20260430_true_inputs:26",
+      "20260430_true_inputs:34",
+      "20260430_true_inputs:40",
+      "20260430_true_inputs:42",
+      "20260430_true_inputs:43",
+      "20260430_true_inputs:48",
+      "20260430_true_inputs:58",
+      "20260430_true_inputs:60",
+      "20260430_true_inputs:67",
+      "20260430_true_inputs:71",
+      "20260430_true_inputs:79",
+      "20260430_true_inputs:85",
+      "20260430_true_inputs:91"
+    ],
+    "feature_frequency_mode": "dataset_fundamental_harmonics_h1_h2_h3_h4",
+    "harmonic_orders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "signal_normalization": "none",
+    "default_fundamental_freq": 15.0,
+    "dataset_fundamental_freqs": {},
+    "dataset_feature_settings": {
+      "20260430_true_inputs": {
+        "fs": 3571.4285714285716,
+        "fundamental_freq": 15.0,
+        "harmonic_orders": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "harmonic_freqs": [
+          15.0,
+          30.0,
+          45.0,
+          60.0
+        ],
+        "window_size": 238,
+        "stride": 59
+      }
+    },
+    "feature_count": 104,
+    "feature_set": "all",
+    "training_unit": "window",
+    "max_windows_per_point": null,
+    "hidden_layers": [
+      128,
+      128,
+      64
+    ],
+    "alpha": 0.001,
+    "separate_x_model": false,
+    "x_hidden_layers": [
+      128,
+      128,
+      64
+    ],
+    "x_alpha": 0.0001,
+    "x_model_random_state": 42,
+    "x_ensemble_seeds": [
+      42
+    ],
+    "x_stretch_calibration": "none",
+    "x_stretch_calibration_fit": {
+      "mode": "none",
+      "global_scale": 1.0,
+      "bins": []
+    },
+    "edge_sample_weight": 1.0,
+    "near_edge_sample_weight": 1.0,
+    "early_stopping": true,
+    "train_points": 139,
+    "test_points": 23,
+    "train_unique_record_ids": 139,
+    "test_unique_record_ids": 23,
+    "train_windows": 47801,
+    "test_windows": 7892
+  },
+  "train_window_metrics": {
+    "rmse_x": 0.3679786678954392,
+    "rmse_y": 0.197832711410248,
+    "rmse_all": 0.295420109107379,
+    "mean_euclidean_error": 0.33437887731042865,
+    "median_euclidean_error": 0.28286996130137293,
+    "max_euclidean_error": 5.946157610684799,
+    "r2_x": 0.9808329834648061,
+    "r2_y": 0.9985967968373554,
+    "r2_all": 0.9897148901510808
+  },
+  "test_window_metrics": {
+    "rmse_x": 1.0679016478210557,
+    "rmse_y": 0.341838909818971,
+    "rmse_all": 0.7928643546298295,
+    "mean_euclidean_error": 0.906925194820326,
+    "median_euclidean_error": 0.7596972902465096,
+    "max_euclidean_error": 4.658881835063418,
+    "r2_x": 0.7354326436346682,
+    "r2_y": 0.9937553677591934,
+    "r2_all": 0.8645940056969303
+  },
+  "train_point_metrics": {
+    "rmse_x": 0.15595069645134235,
+    "rmse_y": 0.11671440519411591,
+    "rmse_all": 0.13773683621942787,
+    "mean_euclidean_error": 0.16453088277980468,
+    "median_euclidean_error": 0.15318934150558702,
+    "max_euclidean_error": 0.7974427595058141,
+    "r2_x": 0.9965417603020297,
+    "r2_y": 0.9995087747562861,
+    "r2_all": 0.9980252675291579
+  },
+  "test_point_metrics": {
+    "rmse_x": 0.6622764175951878,
+    "rmse_y": 0.285552895367966,
+    "rmse_all": 0.5099757393032261,
+    "mean_euclidean_error": 0.5773250453570512,
+    "median_euclidean_error": 0.44462729338416884,
+    "max_euclidean_error": 1.9921549841499488,
+    "r2_x": 0.8983239622273722,
+    "r2_y": 0.9956847837883102,
+    "r2_all": 0.9470043730078412
+  },
+  "train_point_metrics_by_dataset": {
+    "20260430_true_inputs": {
+      "rmse_x": 0.15595069645134235,
+      "rmse_y": 0.11671440519411591,
+      "rmse_all": 0.13773683621942787,
+      "mean_euclidean_error": 0.16453088277980468,
+      "median_euclidean_error": 0.15318934150558702,
+      "max_euclidean_error": 0.7974427595058141,
+      "r2_x": 0.9965417603020297,
+      "r2_y": 0.9995087747562861,
+      "r2_all": 0.9980252675291579
+    }
+  },
+  "test_point_metrics_by_dataset": {
+    "20260430_true_inputs": {
+      "rmse_x": 0.6622764175951878,
+      "rmse_y": 0.285552895367966,
+      "rmse_all": 0.5099757393032261,
+      "mean_euclidean_error": 0.5773250453570512,
+      "median_euclidean_error": 0.44462729338416884,
+      "max_euclidean_error": 1.9921549841499488,
+      "r2_x": 0.8983239622273722,
+      "r2_y": 0.9956847837883102,
+      "r2_all": 0.9470043730078412
+    }
+  }
+}

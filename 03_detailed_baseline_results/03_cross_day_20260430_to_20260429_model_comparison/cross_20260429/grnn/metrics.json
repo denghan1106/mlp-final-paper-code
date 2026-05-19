@@ -1,0 +1,172 @@
+{
+  "config": {
+    "method": "grnn",
+    "data_dirs": [
+      "/Users/tony/Downloads/whisker/mlp/20260430_true_inputs",
+      "/Users/tony/Downloads/whisker/mlp/20260429"
+    ],
+    "train_dataset": "20260430_true_inputs",
+    "predict_dataset": "20260429",
+    "rows": 18,
+    "predict_rows": 7,
+    "cols": 9,
+    "target_mode": "center_relative",
+    "feature_set": "all",
+    "feature_count": 104,
+    "harmonic_orders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "signal_normalization": "record_median",
+    "max_windows_per_point": 120,
+    "calibration_dataset": "20260429",
+    "calibration_record_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      18,
+      19,
+      27,
+      28,
+      32,
+      36,
+      37,
+      45,
+      46,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "calibration_sample_weight": 2.0,
+    "test_keys": [
+      "20260429:11",
+      "20260429:12",
+      "20260429:13",
+      "20260429:14",
+      "20260429:15",
+      "20260429:16",
+      "20260429:17",
+      "20260429:20",
+      "20260429:21",
+      "20260429:22",
+      "20260429:23",
+      "20260429:24",
+      "20260429:25",
+      "20260429:26",
+      "20260429:29",
+      "20260429:30",
+      "20260429:31",
+      "20260429:33",
+      "20260429:34",
+      "20260429:35",
+      "20260429:38",
+      "20260429:39",
+      "20260429:40",
+      "20260429:41",
+      "20260429:42",
+      "20260429:43",
+      "20260429:44",
+      "20260429:47",
+      "20260429:48",
+      "20260429:49",
+      "20260429:50",
+      "20260429:51",
+      "20260429:52",
+      "20260429:53"
+    ],
+    "train_points": 191,
+    "test_points": 34,
+    "dataset_feature_settings": {
+      "20260430_true_inputs": {
+        "fs": 3571.4285714285716,
+        "fundamental_freq": 15.0,
+        "harmonic_orders": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "harmonic_freqs": [
+          15.0,
+          30.0,
+          45.0,
+          60.0
+        ],
+        "window_size": 238,
+        "stride": 59
+      },
+      "20260429": {
+        "fs": 3571.4285714285716,
+        "fundamental_freq": 15.0,
+        "harmonic_orders": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "harmonic_freqs": [
+          15.0,
+          30.0,
+          45.0,
+          60.0
+        ],
+        "window_size": 238,
+        "stride": 59
+      }
+    },
+    "training_unit": "point_mean",
+    "bandwidth": 9.682784004561046,
+    "bandwidth_scale": 1.5
+  },
+  "train_point_metrics": {
+    "rmse_x": 2.613968800900871,
+    "rmse_y": 4.442414912647055,
+    "rmse_all": 3.6447141964900402,
+    "mean_euclidean_error": 4.724062194640025,
+    "median_euclidean_error": 4.647869462885851,
+    "max_euclidean_error": 9.257562900572841,
+    "r2_x": 0.04038891000891254,
+    "r2_y": 0.286984696540161,
+    "r2_all": 0.16368680327453677
+  },
+  "test_point_metrics": {
+    "rmse_x": 1.9651389754029147,
+    "rmse_y": 3.8247760652680776,
+    "rmse_all": 3.0406153277005608,
+    "mean_euclidean_error": 4.145454175088631,
+    "median_euclidean_error": 4.019071107632206,
+    "max_euclidean_error": 6.80102954788107,
+    "r2_x": 0.06214128178557865,
+    "r2_y": -6.1054715183031,
+    "r2_all": -3.0216651182587606
+  },
+  "test_point_metrics_by_dataset": {
+    "20260429": {
+      "rmse_x": 1.9651389754029147,
+      "rmse_y": 3.8247760652680776,
+      "rmse_all": 3.0406153277005608,
+      "mean_euclidean_error": 4.145454175088631,
+      "median_euclidean_error": 4.019071107632206,
+      "max_euclidean_error": 6.80102954788107,
+      "r2_x": 0.06214128178557865,
+      "r2_y": -6.1054715183031,
+      "r2_all": -3.0216651182587606
+    }
+  }
+}

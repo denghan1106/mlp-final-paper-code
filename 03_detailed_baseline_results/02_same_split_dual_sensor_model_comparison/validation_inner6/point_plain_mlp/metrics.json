@@ -1,0 +1,36 @@
+{
+  "config": {
+    "model": "point_plain_mlp",
+    "training_unit": "point_mean",
+    "feature_count": 194,
+    "hidden_layer_sizes": [
+      64,
+      64
+    ],
+    "alpha": 0.01,
+    "random_state": 20260515,
+    "note": "plain MLP baseline trained on one point-mean feature vector per target point; no window-level training, no x classifier, no anchor correction, no classifier blend, no edge weighting."
+  },
+  "train_point_metrics": {
+    "rmse_x": 0.44341954352697643,
+    "rmse_y": 0.29599932694082554,
+    "rmse_all": 0.37698573788082085,
+    "mean_euclidean_error": 0.25705903181293743,
+    "median_euclidean_error": 0.08712732422061394,
+    "max_euclidean_error": 3.0343180192253008,
+    "r2_x": 0.9720417415162904,
+    "r2_y": 0.9968405375246151,
+    "r2_all": 0.9844411395204528
+  },
+  "test_point_metrics": {
+    "rmse_x": 1.1930299821090846,
+    "rmse_y": 0.7421096886607338,
+    "rmse_all": 0.9934906462104548,
+    "mean_euclidean_error": 1.233654475955812,
+    "median_euclidean_error": 1.0684649535916377,
+    "max_euclidean_error": 2.4956753702045567,
+    "r2_x": 0.6700540908353523,
+    "r2_y": 0.9708548947666882,
+    "r2_all": 0.8204544928010202
+  }
+}

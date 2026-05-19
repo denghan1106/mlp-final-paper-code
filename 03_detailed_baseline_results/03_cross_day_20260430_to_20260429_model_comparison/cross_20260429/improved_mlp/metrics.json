@@ -1,0 +1,42 @@
+{
+  "config": {
+    "algorithm": "point_prediction_ensemble_mean",
+    "n_models": 10,
+    "source_dirs": [
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed1",
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed2",
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed3",
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed4",
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed5",
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed6",
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed7",
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed8",
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed9",
+      "/Users/tony/Downloads/whisker/mlp/20260430true162_predict_20260429_anchor/results_joint_record_median_calib29_w2_alpha0001_seed10"
+    ]
+  },
+  "test_point_metrics": {
+    "rmse_x": 0.35278568701726387,
+    "rmse_y": 0.5488568470211201,
+    "rmse_all": 0.46135755086820035,
+    "mean_euclidean_error": 0.5562955865204392,
+    "median_euclidean_error": 0.45183456358017626,
+    "max_euclidean_error": 1.6025460488565257,
+    "r2_x": 0.9697745486229696,
+    "r2_y": 0.853681564146474,
+    "r2_all": 0.9117280563847219
+  },
+  "test_point_metrics_by_dataset": {
+    "20260429": {
+      "rmse_x": 0.35278568701726387,
+      "rmse_y": 0.5488568470211201,
+      "rmse_all": 0.46135755086820035,
+      "mean_euclidean_error": 0.5562955865204392,
+      "median_euclidean_error": 0.45183456358017626,
+      "max_euclidean_error": 1.6025460488565257,
+      "r2_x": 0.9697745486229696,
+      "r2_y": 0.853681564146474,
+      "r2_all": 0.9117280563847219
+    }
+  }
+}

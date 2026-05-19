@@ -1,0 +1,126 @@
+{
+  "config": {
+    "train_dataset": "20260430_true_inputs",
+    "predict_dataset": "20260429",
+    "rows": 18,
+    "predict_rows": 7,
+    "cols": 9,
+    "target_mode": "center_relative",
+    "feature_set": "all",
+    "feature_count": 104,
+    "training_unit": "point_mean",
+    "calibration_dataset": "20260429",
+    "calibration_record_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      18,
+      19,
+      27,
+      28,
+      32,
+      36,
+      37,
+      45,
+      46,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "calibration_sample_weight": 2.0,
+    "dataset_feature_settings": {
+      "20260430_true_inputs": {
+        "fs": 3571.4285714285716,
+        "fundamental_freq": 15.0,
+        "harmonic_orders": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "harmonic_freqs": [
+          15.0,
+          30.0,
+          45.0,
+          60.0
+        ],
+        "window_size": 238,
+        "stride": 59
+      },
+      "20260429": {
+        "fs": 3571.4285714285716,
+        "fundamental_freq": 15.0,
+        "harmonic_orders": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "harmonic_freqs": [
+          15.0,
+          30.0,
+          45.0,
+          60.0
+        ],
+        "window_size": 238,
+        "stride": 59
+      }
+    },
+    "method": "point_plain_mlp",
+    "hidden_layer_sizes": [
+      64,
+      64
+    ],
+    "alpha": 0.01,
+    "note": "point-level plain MLP baseline; no window-level training, no x classifier, no anchor correction, no classifier blend, no edge weighting."
+  },
+  "train_point_metrics": {
+    "rmse_x": 0.864471467652464,
+    "rmse_y": 1.0889079508302018,
+    "rmse_all": 0.9831153146417856,
+    "mean_euclidean_error": 0.9483312812408254,
+    "median_euclidean_error": 0.6653265889381249,
+    "max_euclidean_error": 8.097654789739451,
+    "r2_x": 0.8950467754326661,
+    "r2_y": 0.9571606421442198,
+    "r2_all": 0.926103708788443
+  },
+  "test_point_metrics": {
+    "rmse_x": 1.3785886315336497,
+    "rmse_y": 1.2900960301377102,
+    "rmse_all": 1.3350757248131848,
+    "mean_euclidean_error": 1.6730028247615736,
+    "median_euclidean_error": 1.5891994370878546,
+    "max_euclidean_error": 4.789293176009398,
+    "r2_x": 0.5384483935015005,
+    "r2_y": 0.19160251318256116,
+    "r2_all": 0.36502545334203085
+  },
+  "test_point_metrics_by_dataset": {
+    "20260429": {
+      "rmse_x": 1.3785886315336497,
+      "rmse_y": 1.2900960301377102,
+      "rmse_all": 1.3350757248131848,
+      "mean_euclidean_error": 1.6730028247615736,
+      "median_euclidean_error": 1.5891994370878546,
+      "max_euclidean_error": 4.789293176009398,
+      "r2_x": 0.5384483935015005,
+      "r2_y": 0.19160251318256116,
+      "r2_all": 0.36502545334203085
+    }
+  }
+}

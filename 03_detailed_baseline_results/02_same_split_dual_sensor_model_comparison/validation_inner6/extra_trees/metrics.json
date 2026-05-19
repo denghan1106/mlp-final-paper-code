@@ -1,0 +1,114 @@
+{
+  "config": {
+    "reference": "validation_inner6",
+    "method": "extra_trees",
+    "rows": 18,
+    "cols": 9,
+    "feature_scope": "full",
+    "training_unit": "point_mean",
+    "feature_count": 104,
+    "data_dirs": [
+      "/Users/tony/Downloads/whisker/mlp/20260430_true_inputs"
+    ],
+    "split_random_state": 3205562088,
+    "test_keys": [
+      "20260430_true_inputs:103",
+      "20260430_true_inputs:105",
+      "20260430_true_inputs:106",
+      "20260430_true_inputs:13",
+      "20260430_true_inputs:131",
+      "20260430_true_inputs:141",
+      "20260430_true_inputs:143",
+      "20260430_true_inputs:17",
+      "20260430_true_inputs:19",
+      "20260430_true_inputs:25",
+      "20260430_true_inputs:26",
+      "20260430_true_inputs:34",
+      "20260430_true_inputs:40",
+      "20260430_true_inputs:42",
+      "20260430_true_inputs:43",
+      "20260430_true_inputs:48",
+      "20260430_true_inputs:58",
+      "20260430_true_inputs:60",
+      "20260430_true_inputs:67",
+      "20260430_true_inputs:71",
+      "20260430_true_inputs:79",
+      "20260430_true_inputs:85",
+      "20260430_true_inputs:91"
+    ],
+    "train_points": 139,
+    "test_points": 23,
+    "dataset_feature_settings": {
+      "20260430_true_inputs": {
+        "fs": 3571.4285714285716,
+        "fundamental_freq": 15.0,
+        "harmonic_orders": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "harmonic_freqs": [
+          15.0,
+          30.0,
+          45.0,
+          60.0
+        ],
+        "window_size": 238,
+        "stride": 59
+      }
+    },
+    "n_estimators": 300,
+    "min_samples_leaf": 2,
+    "max_features": 0.7
+  },
+  "train_point_metrics": {
+    "rmse_x": 0.22939939615408286,
+    "rmse_y": 0.2036270827000982,
+    "rmse_all": 0.2168963712983812,
+    "mean_euclidean_error": 0.27199488550614315,
+    "median_euclidean_error": 0.2557969874049103,
+    "max_euclidean_error": 0.654745733326033,
+    "r2_x": 0.9925171852191662,
+    "r2_y": 0.9985047877957242,
+    "r2_all": 0.9955109865074452
+  },
+  "test_point_metrics": {
+    "rmse_x": 1.024754641175556,
+    "rmse_y": 0.43939145994484563,
+    "rmse_all": 0.7884119892807647,
+    "mean_euclidean_error": 0.9393248467123595,
+    "median_euclidean_error": 0.7423852116449648,
+    "max_euclidean_error": 2.638836315265771,
+    "r2_x": 0.7565667933965224,
+    "r2_y": 0.9897827822795785,
+    "r2_all": 0.8731747878380505
+  },
+  "test_point_metrics_non_anchor": null,
+  "train_point_metrics_by_dataset": {
+    "20260430_true_inputs": {
+      "rmse_x": 0.22939939615408286,
+      "rmse_y": 0.2036270827000982,
+      "rmse_all": 0.2168963712983812,
+      "mean_euclidean_error": 0.27199488550614315,
+      "median_euclidean_error": 0.2557969874049103,
+      "max_euclidean_error": 0.654745733326033,
+      "r2_x": 0.9925171852191662,
+      "r2_y": 0.9985047877957242,
+      "r2_all": 0.9955109865074452
+    }
+  },
+  "test_point_metrics_by_dataset": {
+    "20260430_true_inputs": {
+      "rmse_x": 1.024754641175556,
+      "rmse_y": 0.43939145994484563,
+      "rmse_all": 0.7884119892807647,
+      "mean_euclidean_error": 0.9393248467123595,
+      "median_euclidean_error": 0.7423852116449648,
+      "max_euclidean_error": 2.638836315265771,
+      "r2_x": 0.7565667933965224,
+      "r2_y": 0.9897827822795785,
+      "r2_all": 0.8731747878380505
+    }
+  }
+}

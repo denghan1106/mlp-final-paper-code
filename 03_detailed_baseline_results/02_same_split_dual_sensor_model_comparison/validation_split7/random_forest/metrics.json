@@ -1,0 +1,33 @@
+{
+  "config": {
+    "model": "random_forest",
+    "training_unit": "point_mean",
+    "feature_count": 172,
+    "n_estimators": 500,
+    "min_samples_leaf": 2,
+    "max_features": 0.7,
+    "random_state": 20260515
+  },
+  "train_point_metrics": {
+    "rmse_x": 0.6350250397753242,
+    "rmse_y": 0.3024356649204726,
+    "rmse_all": 0.4973550706273841,
+    "mean_euclidean_error": 0.5921832589483162,
+    "median_euclidean_error": 0.5143444408495433,
+    "max_euclidean_error": 2.289235339633607,
+    "r2_x": 0.9405587242908094,
+    "r2_y": 0.9966228151414014,
+    "r2_all": 0.9685907697161054
+  },
+  "test_point_metrics": {
+    "rmse_x": 1.3305919649209206,
+    "rmse_y": 0.5276571182808526,
+    "rmse_all": 1.012150436344462,
+    "mean_euclidean_error": 1.2104997272021618,
+    "median_euclidean_error": 0.9582099395849917,
+    "max_euclidean_error": 3.175174387091369,
+    "r2_x": 0.7026726149548224,
+    "r2_y": 0.989241398375754,
+    "r2_all": 0.8459570066652882
+  }
+}

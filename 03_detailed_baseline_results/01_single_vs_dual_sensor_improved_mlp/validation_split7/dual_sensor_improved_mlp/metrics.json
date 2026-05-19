@@ -1,0 +1,283 @@
+{
+  "config": {
+    "data_dirs": [
+      "/Users/tony/Downloads/whisker/mlp/20260430_true_inputs"
+    ],
+    "rows": 18,
+    "cols": 9,
+    "grid_step": 1.0,
+    "scan_order": "horizontal_up",
+    "left_sensor_xy": [
+      3.0,
+      -2.0
+    ],
+    "right_sensor_xy": [
+      5.0,
+      -2.0
+    ],
+    "reference_xy": [
+      4.0,
+      -2.0
+    ],
+    "target_mode": "center_relative",
+    "channels": [
+      "left_input27",
+      "left_input28",
+      "left_input29",
+      "left_theory30",
+      "right_input23",
+      "right_input24",
+      "right_input25",
+      "right_input26"
+    ],
+    "dataset_channel_rules": {
+      "20260428": "replace polluted measured 29 with theoretical 29; synthesize 30",
+      "20260429": "use measured 29; synthesize 30"
+    },
+    "row_offsets": {},
+    "split_mode": "constrained_random",
+    "split_unit": "dataset_record",
+    "test_size": 0.14,
+    "max_edge_test_fraction": 0.05,
+    "split_random_state": 7,
+    "randomize_split": false,
+    "constrained_max_edge_test_fraction": 0.25,
+    "constrained_rule_no_three_in_line": "horizontal_vertical_diagonal",
+    "exclude_corner_test": true,
+    "excluded_corner_test_keys": [
+      "20260430_true_inputs:1",
+      "20260430_true_inputs:154",
+      "20260430_true_inputs:162",
+      "20260430_true_inputs:9"
+    ],
+    "test_keys": [
+      "20260430_true_inputs:10",
+      "20260430_true_inputs:112",
+      "20260430_true_inputs:121",
+      "20260430_true_inputs:124",
+      "20260430_true_inputs:127",
+      "20260430_true_inputs:130",
+      "20260430_true_inputs:131",
+      "20260430_true_inputs:138",
+      "20260430_true_inputs:149",
+      "20260430_true_inputs:153",
+      "20260430_true_inputs:2",
+      "20260430_true_inputs:21",
+      "20260430_true_inputs:22",
+      "20260430_true_inputs:35",
+      "20260430_true_inputs:44",
+      "20260430_true_inputs:46",
+      "20260430_true_inputs:50",
+      "20260430_true_inputs:56",
+      "20260430_true_inputs:75",
+      "20260430_true_inputs:77",
+      "20260430_true_inputs:83",
+      "20260430_true_inputs:88",
+      "20260430_true_inputs:97"
+    ],
+    "feature_frequency_mode": "dataset_fundamental_harmonics_h1_h2_h3",
+    "harmonic_orders": [
+      1,
+      2,
+      3
+    ],
+    "signal_normalization": "none",
+    "default_fundamental_freq": 15.0,
+    "dataset_fundamental_freqs": {},
+    "dataset_feature_settings": {
+      "20260430_true_inputs": {
+        "fs": 3571.4285714285716,
+        "fundamental_freq": 15.0,
+        "harmonic_orders": [
+          1,
+          2,
+          3
+        ],
+        "harmonic_freqs": [
+          15.0,
+          30.0,
+          45.0
+        ],
+        "window_size": 238,
+        "stride": 59
+      }
+    },
+    "feature_count": 136,
+    "feature_set": "all_physics",
+    "training_unit": "window",
+    "max_windows_per_point": 120,
+    "hidden_layers": [
+      128,
+      128,
+      64
+    ],
+    "alpha": 0.001,
+    "separate_x_model": true,
+    "x_model_type": "window_mlp_classifier_blend",
+    "x_blend_classifier_weight": 0.0,
+    "augment_x_mirror": false,
+    "x_hidden_layers": [
+      128,
+      128,
+      64
+    ],
+    "x_alpha": 0.0001,
+    "x_model_random_state": 42,
+    "x_ensemble_seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      17,
+      23,
+      42,
+      77,
+      99
+    ],
+    "x_probability_temperature_gamma": 12.0,
+    "x_probability_temperature_train_metrics": {
+      "rmse_x": 0.00020620898785658412,
+      "rmse_y": 0.18970944579432966,
+      "rmse_all": 0.13414491482299726,
+      "mean_euclidean_error": 0.1416676138042994,
+      "median_euclidean_error": 0.122266120921457,
+      "max_euclidean_error": 0.5809724855142466,
+      "r2_x": 0.9999999937321066,
+      "r2_y": 0.9986711782270077,
+      "r2_all": 0.9993355859795572
+    },
+    "x_stretch_calibration": "train_mean_dist",
+    "x_stretch_calibration_fit": {
+      "mode": "train_mean_dist",
+      "global_scale": 1.0250000000000004,
+      "bins": []
+    },
+    "x_anchor_correction": "bias",
+    "x_anchor_record_ids": [],
+    "x_anchor_auto_count": 5,
+    "x_anchor_keys_used": [
+      "20260430_true_inputs:2",
+      "20260430_true_inputs:10",
+      "20260430_true_inputs:77",
+      "20260430_true_inputs:127",
+      "20260430_true_inputs:153"
+    ],
+    "x_anchor_correction_fit": {
+      "method": "bias",
+      "anchors": [
+        "20260430_true_inputs:2",
+        "20260430_true_inputs:10",
+        "20260430_true_inputs:77",
+        "20260430_true_inputs:127",
+        "20260430_true_inputs:153"
+      ],
+      "n_anchors": 5,
+      "delta": 0.2896341273582023
+    },
+    "x_anchor_exclude_from_metrics": true,
+    "edge_sample_weight": 3.0,
+    "near_edge_sample_weight": 1.5,
+    "early_stopping": true,
+    "train_points": 139,
+    "test_points": 23,
+    "train_unique_record_ids": 139,
+    "test_unique_record_ids": 23,
+    "train_windows": 16680,
+    "test_windows": 2760
+  },
+  "train_window_metrics": {
+    "rmse_x": 0.3329120036858035,
+    "rmse_y": 0.285592478652642,
+    "rmse_all": 0.31015598177453946,
+    "mean_euclidean_error": 0.35897418596028047,
+    "median_euclidean_error": 0.3064016597506597,
+    "max_euclidean_error": 2.096278425479529,
+    "r2_x": 0.9836632625280798,
+    "r2_y": 0.9969885035450914,
+    "r2_all": 0.9903258830365855
+  },
+  "test_window_metrics": {
+    "rmse_x": 1.060488918487463,
+    "rmse_y": 0.4518822866450195,
+    "rmse_all": 0.8151178893933815,
+    "mean_euclidean_error": 0.9578313732959397,
+    "median_euclidean_error": 0.8380195494980516,
+    "max_euclidean_error": 7.24184354910865,
+    "r2_x": 0.8111324321402663,
+    "r2_y": 0.9921095302468745,
+    "r2_all": 0.9016209811935703
+  },
+  "train_point_metrics": {
+    "rmse_x": 0.1919143693294855,
+    "rmse_y": 0.18970944579432966,
+    "rmse_all": 0.19081509240456568,
+    "mean_euclidean_error": 0.21813119075528198,
+    "median_euclidean_error": 0.184461285344262,
+    "max_euclidean_error": 0.8548877636333063,
+    "r2_x": 0.9945709804302668,
+    "r2_y": 0.9986711782270077,
+    "r2_all": 0.9966210793286372
+  },
+  "test_point_metrics": {
+    "rmse_x": 0.6749384992186035,
+    "rmse_y": 0.3486376454730277,
+    "rmse_all": 0.5371639347389386,
+    "mean_euclidean_error": 0.6691763162601123,
+    "median_euclidean_error": 0.5316773882791813,
+    "max_euclidean_error": 1.5130836949016693,
+    "r2_x": 0.9234978710419598,
+    "r2_y": 0.995303213882551,
+    "r2_all": 0.9594005424622554
+  },
+  "test_point_metrics_non_anchor": {
+    "rmse_x": 0.6367432639483614,
+    "rmse_y": 0.3639297462220061,
+    "rmse_all": 0.5185975531994084,
+    "mean_euclidean_error": 0.6436978773965033,
+    "median_euclidean_error": 0.5284578545868657,
+    "max_euclidean_error": 1.5130836949016693,
+    "r2_x": 0.9085214464655358,
+    "r2_y": 0.993689391955881,
+    "r2_all": 0.9511054192107085
+  },
+  "train_point_metrics_by_dataset": {
+    "20260430_true_inputs": {
+      "rmse_x": 0.1919143693294855,
+      "rmse_y": 0.18970944579432966,
+      "rmse_all": 0.19081509240456568,
+      "mean_euclidean_error": 0.21813119075528198,
+      "median_euclidean_error": 0.184461285344262,
+      "max_euclidean_error": 0.8548877636333063,
+      "r2_x": 0.9945709804302668,
+      "r2_y": 0.9986711782270077,
+      "r2_all": 0.9966210793286372
+    }
+  },
+  "test_point_metrics_by_dataset": {
+    "20260430_true_inputs": {
+      "rmse_x": 0.6749384992186035,
+      "rmse_y": 0.3486376454730277,
+      "rmse_all": 0.5371639347389386,
+      "mean_euclidean_error": 0.6691763162601123,
+      "median_euclidean_error": 0.5316773882791813,
+      "max_euclidean_error": 1.5130836949016693,
+      "r2_x": 0.9234978710419598,
+      "r2_y": 0.995303213882551,
+      "r2_all": 0.9594005424622554
+    }
+  },
+  "test_point_metrics_by_dataset_non_anchor": {
+    "20260430_true_inputs": {
+      "rmse_x": 0.6367432639483614,
+      "rmse_y": 0.3639297462220061,
+      "rmse_all": 0.5185975531994084,
+      "mean_euclidean_error": 0.6436978773965033,
+      "median_euclidean_error": 0.5284578545868657,
+      "max_euclidean_error": 1.5130836949016693,
+      "r2_x": 0.9085214464655358,
+      "r2_y": 0.993689391955881,
+      "r2_all": 0.9511054192107085
+    }
+  }
+}

@@ -1,0 +1,2 @@
+﻿name,mean_error,median_error,rmse_x,rmse_y,max_error
+results_joint_record_median_calib29_w2_alpha0001_seed1_10_ensemble,0.5562955865204392,0.45183456358017626,0.35278568701726387,0.5488568470211203,1.6025460488565257
